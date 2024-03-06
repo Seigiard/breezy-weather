@@ -91,12 +91,15 @@ android {
     sourceSets {
         getByName("basic") {
             java.srcDirs("src/src_nofdroid", "src/src_nogplay")
+            res.srcDirs("src/res_breezylogo")
         }
         getByName("fdroid") {
             java.srcDirs("src/src_fdroid", "src/src_nogplay")
+            res.srcDirs("src/res_defaultlogo")
         }
         getByName("gplay") {
             java.srcDirs("src/src_nofdroid", "src/src_gplay")
+            res.srcDirs("src/res_breezylogo")
             manifest.srcFile("manifest_gplay/AndroidManifest.xml")
         }
     }
